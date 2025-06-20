@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #111;
+  background-color: #fff;
+}
+
+
+nav {
+  background-color: #000;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-nav {
+  height: 70px;
+  width: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+nav .brand {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.links a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: white;
+}
+
+
+.hero {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("img/banner.avif");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.cta h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.cta a {
+  background-color: #d50000;
+  padding: 12px 36px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.cta a:hover,
+form button:hover,
+.contact-form button:hover {
+  background-color: #b40000;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+
+.rojo {
+  color: #d50000;
+}
+
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+
+.slider-container {
+  width: 100%;
+  background-color: #000;
+  background-image: url("img/bg-adidas.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-images {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.slider-img {
+  width: 120px;
+  height: 480px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.slider-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.slider-img h1 {
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: rotate(270deg);
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.details {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  display: none;
+  color: rgb(179, 177, 177);
+  text-align: left;
+}
+
+.details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.details p {
+  font-size: 18px;
+}
+
+.slider-img.active {
+  width: 600px !important;
+  height: 700px !important;
+}
+
+.slider-img.active h1 {
+  display: none;
+}
+
+.slider-img.active .details {
+  display: block;
+}
+
+
+.historia-section {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.historia-section h2 {
+  font-size: 32px;
+  color: #d50000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.historia-text {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.historia-img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image img {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.contact-form {
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact-form h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #d50000;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form button {
+  background-color: #d50000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-contact p {
+  margin: 8px 0;
+}
+
+.footer-social .social-icons a img {
+  width: 24px;
+  margin: 0 10px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #b81414;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover img {
+  transform: scale(1.1);
+}
+
+
+.testimonios-section {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonios-section h2 {
+  font-size: 32px;
+  color: #d50000;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.testimonios-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.testimonio {
+  background-color: white;
+  border-left: 4px solid #d50000;
+  padding: 20px;
+  max-width: 300px;
+  font-style: italic;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.testimonio span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+  font-style: normal;
+}
