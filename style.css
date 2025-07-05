@@ -362,3 +362,43 @@ footer {
   color: #555;
   font-style: normal;
 }
+
+@media (max-width: 600px) {
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .slider-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-img.active {
+    width: 90% !important;
+    height: auto !important;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta h1 {
+    font-size: 28px;
+  }
+
+  .cta a {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
